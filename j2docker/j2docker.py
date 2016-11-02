@@ -8,6 +8,7 @@ __DEFAULT_BASE_IMAGE__ = "ubuntu:16.04"
 base = Template(u"""FROM {{ base_image }}
 {{ docker_string }}""")
 
+
 def render(base_image, template_path, data=None, extensions=None, strict=False):
     data = data or {}
     extensions = extensions or []

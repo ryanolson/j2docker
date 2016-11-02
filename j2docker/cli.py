@@ -4,6 +4,7 @@ import yaml
 
 import j2docker
 
+
 @click.command()
 @click.option('--base-image', envvar=["J2D_BASE_IMAGE", "BASE_IMAGE"])
 @click.option('--params', type=click.Path(exists=True, file_okay=True, dir_okay=False))
