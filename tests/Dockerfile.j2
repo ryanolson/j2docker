@@ -1,0 +1,7 @@
+
+RUN echo first run from root Dockerfile
+
+{% include 'project-1/Dockerfile' with context %}
+{% include 'project-2/Dockerfile' with context %}
+
+RUN echo second run from root Dockerfile with var1={{ var1 }}
